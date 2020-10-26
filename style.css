@@ -1,15 +1,18 @@
-*{
+* {
     padding: 0%;
     margin: 0%;
 }
 
-body,div,section{
+body,
+div,
+section {
     background-color: lightblue;
     color: white;
     text-align: center;
 }
 
-h1,h3 {
+h1,
+h3 {
     color: white;
     text-align: center;
 }
@@ -21,14 +24,22 @@ p {
 }
 
 ul {
-    color: red;
+    color: white;
 }
 
 #listas {
     background-color: coral;
-    
+
 }
 
-.enumeracion{
-    background-color:blue;
+.enumeracion {
+    background-color: blue;
+}
+
+li:nth-child(2) {
+    color: black;
+}
+
+div:nth-child(2) {
+    color: black;
 }
