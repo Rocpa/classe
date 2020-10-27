@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Emilys Candy';
+    font-size: 30px;
+    box-sizing: border-box;
+    text-align: center;
+}
+body{
+    background-image: url(img/muhammad.jpg);
+    background-size: cover;
+}
+.nav {
+    background-color: aquamarine;
+    list-style-type: none;
+    text-align: center;
+}
+
+.nav li {
+    display: inline-block;
+    height: 8vmax;
+}
+
+.grid {
+    display: grid;
+    
+    align-content: center;
+    position: relative;
+    top: 18vw;
+    grid-gap: 10px;
+    grid-template-areas: 
+    "one two three";
+}
+.grid > div{
+    text-align: center;
+    border: 10px solid black;
+    height: 20vmax;
+}
+.item1 {
+    grid-area: one;
+    /* grid-column-start: 1;
+    grid-column-end: 2; */
+}
+
+.item2 {
+    grid-area: two;
+    /* grid-column-start: 2;
+    grid-column-end: 3; */
+}
+
+.item3 {
+    grid-area: three;
+    /* grid-column-start: 3;
+    grid-column-end: 4; */
+}
+footer{
+    border: 10px solid black;
+    position: relative;
+    top: 19vw;
+}
