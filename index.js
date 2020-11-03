@@ -89,7 +89,7 @@ const aplicarDescuento=function(mueble,descuento){
 console.log('antes del descuento: ',muebleA)
 aplicarDescuento(muebleA, 10)
 console.log('despues del descuento: ',muebleA)
-*/
+
 
 const libroA = {
     titulo: '1984',
@@ -113,20 +113,6 @@ const describir = function(libro){
 }
 
 console.log(describir(libroA))
+*/
 
-const restauranteA = {
-    nombre: 'El celler de can Roca',
-    capacidad: 100,
-    ocupacion: 75,
-    entrar(visitantes){
-        this.ocupacion= this.ocupacion + visitantes
-    },
-    salir(visitantes){
-        this.ocupacion = this.ocupacion - visitantes
-    }
-}
-console.log(restauranteA)
-restauranteA.entrar(7)
-console.log(restauranteA)
-restauranteA.salir(18)
-console.log(restauranteA)
+

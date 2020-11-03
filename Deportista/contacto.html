@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,23 +8,43 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <form action="">
+    <div class="form">
         <label for="name">Nombre</label>
         <input type="text" id="name"><br>
         <label for="surname">Apellido</label>
         <input type="text" id="surname"><br>
         <label for="capcha">No soy un robot</label>
         <input type="checkbox" name="" id="capcha"><br>
-        <label for="submit">Enviar</label>
-        <input type="submit" name="" id="submit"><br>
-    </form>
+        <input type="submit" id="submit" onclick="capcha()"><br>
+        <p id="text" style="display: none">Debes confirmar que no eres un robot</p>
+        <script>
+            function capcha() {
+                var checkBox = document.getElementById("capcha");
+                var text = document.getElementById("text");
+                if (checkBox.checked == false) {
+                    text.style.display = "block";
+                } else {
+                    text.style.display = "none";
+                }
+            }
+        </script>
+    </div>
+
+
     <br><br><br>
     <footer>
         <ul class="nav">
-            <li><a href="bio.html"><h1>Biografía</h1></a></li>
-            <li><a href="index.html"><h1>Inicio</h1></a></li>
+            <li><a href="bio.html">
+                    <h1>Biografía</h1>
+                </a></li>
+            <li><a href="index.html">
+                    <h1>Inicio</h1>
+                </a></li>
         </ul>
+        <p class="copy">&copy;2020</p>
     </footer>
 </body>
+
 </html>
